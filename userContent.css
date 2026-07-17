@@ -34,15 +34,3 @@
     -webkit-text-stroke: 0px currentColor !important; /* ソースコードは元の細さを維持 */
   }
 }
-
-/* 3. Google検索結果のタイトルを太くする */
-@-moz-document domain("google.com"), domain("google.co.jp") {
-  h3, 
-  h3 *,
-  .LC20lb {
-    font-weight: normal !important;
-    -webkit-text-stroke: 0.35px currentColor !important;
-  }
-}
-
-
