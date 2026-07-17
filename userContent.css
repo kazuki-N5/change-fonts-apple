@@ -15,14 +15,18 @@
 }
 
 /* 
-  2. 【オプション】すべてのWebページのデフォルトフォントをAppleフォントに強制したい場合：
-  （※アイコンフォントなどが表示されなくなるリスクを避けるため、デフォルトでは無効化しています。
-     適用したい場合は、以下のコメントアウトを外してください）
+  2. すべてのWebページのフォントをAppleフォントに変更
+  （※アイコンフォントが消えるのを防ぐため、一部のアイコン関連クラスを除外しています）
 */
-/*
 @-moz-document url-prefix("http://"), url-prefix("https://") {
-  body, p, span, div, input, button, textarea {
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "SF Pro", "Segoe UI", sans-serif !important;
+  body, p, li, a, h1, h2, h3, h4, h5, h6, input, button, select, textarea, 
+  span:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]), 
+  div:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]) {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "SF Pro", "Helvetica Neue", Arial, sans-serif !important;
+  }
+  
+  /* 等幅フォント（ソースコードなど）の指定 */
+  code, pre, kbd, samp, var {
+    font-family: "SF Mono", "SFMono-Regular", Consolas, monospace !important;
   }
 }
-*/
