@@ -3,20 +3,51 @@
    ブラウザUIのフォントをAppleのSF Pro / SF Mono / ヒラギノ角ゴに統一します。
    ========================================================================== */
 
-/* 1. UI全体のフォントを変更と、わずかに太く（W4相当）する設定 */
+/* 1. UI全体のフォントを変更 */
 * {
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "SF Pro", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "Segoe UI", sans-serif !important;
-  -webkit-text-stroke: 0.15px currentColor !important;
 }
 
-/* 2. アドレスバー（URLバー）のフォント調整 */
+/* 2. 設定した太さレベル（1〜10）を反映 */
+@media (-moz-bool-pref: "apple-fonts.weight.level.1") {
+  * { -webkit-text-stroke: 0.03px currentColor !important; }
+}
+@media (-moz-bool-pref: "apple-fonts.weight.level.2") {
+  * { -webkit-text-stroke: 0.06px currentColor !important; }
+}
+@media (-moz-bool-pref: "apple-fonts.weight.level.3") {
+  * { -webkit-text-stroke: 0.09px currentColor !important; }
+}
+@media (-moz-bool-pref: "apple-fonts.weight.level.4") {
+  * { -webkit-text-stroke: 0.12px currentColor !important; }
+}
+@media (-moz-bool-pref: "apple-fonts.weight.level.5") {
+  * { -webkit-text-stroke: 0.15px currentColor !important; }
+}
+@media (-moz-bool-pref: "apple-fonts.weight.level.6") {
+  * { -webkit-text-stroke: 0.18px currentColor !important; }
+}
+@media (-moz-bool-pref: "apple-fonts.weight.level.7") {
+  * { -webkit-text-stroke: 0.21px currentColor !important; }
+}
+@media (-moz-bool-pref: "apple-fonts.weight.level.8") {
+  * { -webkit-text-stroke: 0.24px currentColor !important; }
+}
+@media (-moz-bool-pref: "apple-fonts.weight.level.9") {
+  * { -webkit-text-stroke: 0.27px currentColor !important; }
+}
+@media (-moz-bool-pref: "apple-fonts.weight.level.10") {
+  * { -webkit-text-stroke: 0.30px currentColor !important; }
+}
+
+/* 3. アドレスバー（URLバー）のフォント調整 */
 #urlbar-input,
 .searchbar-textbox {
   font-family: "SF Pro Text", "SF Pro", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "Segoe UI", sans-serif !important;
   font-size: 13px !important;
 }
 
-/* 3. 等幅フォント（ソース表示、開発者ツール、デバッグ画面など） */
+/* 4. 等幅フォント（ソース表示、開発者ツール、デバッグ画面など） */
 code, 
 pre, 
 kbd, 
@@ -24,10 +55,10 @@ samp,
 .monospace,
 .devtools-monospace {
   font-family: "SF Mono", "SFMono-Regular", Consolas, monospace !important;
-  -webkit-text-stroke: 0px currentColor !important; /* 等幅は元の細さを維持 */
+  -webkit-text-stroke: 0px currentColor !important; /* 等幅は常に太さ補正を無効化 */
 }
 
-/* 4. タブバーのフォントの太さを少し調整してApple風に */
+/* 5. タブバーのフォントの太さを少し調整してApple風に */
 .tab-text {
   font-weight: 500 !important;
 }

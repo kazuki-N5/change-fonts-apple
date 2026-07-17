@@ -7,12 +7,11 @@
 @-moz-document url-prefix("about:") {
   * {
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "SF Pro", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "Segoe UI", sans-serif !important;
-    -webkit-text-stroke: 0.15px currentColor !important;
   }
   
   code, pre, kbd, samp {
     font-family: "SF Mono", "SFMono-Regular", Consolas, monospace !important;
-    -webkit-text-stroke: 0px currentColor !important; /* 等幅は元の細さを維持 */
+    -webkit-text-stroke: 0px currentColor !important;
   }
 }
 
@@ -25,12 +24,100 @@
   span:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]), 
   div:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]) {
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "SF Pro", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "Helvetica Neue", Arial, sans-serif !important;
-    -webkit-text-stroke: 0.15px currentColor !important;
   }
   
   /* 等幅フォント（ソースコードなど）の指定 */
   code, pre, kbd, samp, var {
     font-family: "SF Mono", "SFMono-Regular", Consolas, monospace !important;
-    -webkit-text-stroke: 0px currentColor !important; /* ソースコードは元の細さを維持 */
+    -webkit-text-stroke: 0px currentColor !important;
   }
+}
+
+/* 
+  3. 設定した太さレベル（1〜10）を反映（Webコンテンツおよびabout:ページ共通）
+*/
+@media (-moz-bool-pref: "apple-fonts.weight.level.1") {
+  body, p, li, a, h1, h2, h3, h4, h5, h6, input, button, select, textarea, 
+  span:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]), 
+  div:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]),
+  * {
+    -webkit-text-stroke: 0.03px currentColor !important;
+  }
+}
+@media (-moz-bool-pref: "apple-fonts.weight.level.2") {
+  body, p, li, a, h1, h2, h3, h4, h5, h6, input, button, select, textarea, 
+  span:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]), 
+  div:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]),
+  * {
+    -webkit-text-stroke: 0.06px currentColor !important;
+  }
+}
+@media (-moz-bool-pref: "apple-fonts.weight.level.3") {
+  body, p, li, a, h1, h2, h3, h4, h5, h6, input, button, select, textarea, 
+  span:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]), 
+  div:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]),
+  * {
+    -webkit-text-stroke: 0.09px currentColor !important;
+  }
+}
+@media (-moz-bool-pref: "apple-fonts.weight.level.4") {
+  body, p, li, a, h1, h2, h3, h4, h5, h6, input, button, select, textarea, 
+  span:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]), 
+  div:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]),
+  * {
+    -webkit-text-stroke: 0.12px currentColor !important;
+  }
+}
+@media (-moz-bool-pref: "apple-fonts.weight.level.5") {
+  body, p, li, a, h1, h2, h3, h4, h5, h6, input, button, select, textarea, 
+  span:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]), 
+  div:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]),
+  * {
+    -webkit-text-stroke: 0.15px currentColor !important;
+  }
+}
+@media (-moz-bool-pref: "apple-fonts.weight.level.6") {
+  body, p, li, a, h1, h2, h3, h4, h5, h6, input, button, select, textarea, 
+  span:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]), 
+  div:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]),
+  * {
+    -webkit-text-stroke: 0.18px currentColor !important;
+  }
+}
+@media (-moz-bool-pref: "apple-fonts.weight.level.7") {
+  body, p, li, a, h1, h2, h3, h4, h5, h6, input, button, select, textarea, 
+  span:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]), 
+  div:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]),
+  * {
+    -webkit-text-stroke: 0.21px currentColor !important;
+  }
+}
+@media (-moz-bool-pref: "apple-fonts.weight.level.8") {
+  body, p, li, a, h1, h2, h3, h4, h5, h6, input, button, select, textarea, 
+  span:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]), 
+  div:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]),
+  * {
+    -webkit-text-stroke: 0.24px currentColor !important;
+  }
+}
+@media (-moz-bool-pref: "apple-fonts.weight.level.9") {
+  body, p, li, a, h1, h2, h3, h4, h5, h6, input, button, select, textarea, 
+  span:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]), 
+  div:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]),
+  * {
+    -webkit-text-stroke: 0.27px currentColor !important;
+  }
+}
+@media (-moz-bool-pref: "apple-fonts.weight.level.10") {
+  body, p, li, a, h1, h2, h3, h4, h5, h6, input, button, select, textarea, 
+  span:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]), 
+  div:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]),
+  * {
+    -webkit-text-stroke: 0.30px currentColor !important;
+  }
+}
+
+/* 4. 等幅フォント（ソースコードなど）は常に例外として太さ補正を無効化 */
+code, pre, kbd, samp, var {
+  -webkit-text-stroke: 0px currentColor !important;
 }
