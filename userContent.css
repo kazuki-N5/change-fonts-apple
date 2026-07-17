@@ -40,7 +40,9 @@
   h3, 
   h3 *,
   .LC20lb {
-    font-weight: bold !important;
+    font-weight: normal !important;
+    -webkit-text-stroke: 0.35px currentColor !important;
   }
 }
+
 
