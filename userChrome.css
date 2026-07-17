@@ -1,17 +1,17 @@
 /* ==========================================================================
    Apple Fonts Mod - userChrome.css
-   ブラウザUIのフォントをAppleのSF Pro / SF Monoに統一します。
+   ブラウザUIのフォントをAppleのSF Pro / SF Mono / ヒラギノ角ゴに統一します。
    ========================================================================== */
 
 /* 1. UI全体のフォントを変更 */
 * {
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "SF Pro", "Segoe UI", sans-serif !important;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "SF Pro", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "Segoe UI", sans-serif !important;
 }
 
 /* 2. アドレスバー（URLバー）のフォント調整 */
 #urlbar-input,
 .searchbar-textbox {
-  font-family: "SF Pro Text", "SF Pro", "Segoe UI", sans-serif !important;
+  font-family: "SF Pro Text", "SF Pro", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "Segoe UI", sans-serif !important;
   font-size: 13px !important;
 }
 

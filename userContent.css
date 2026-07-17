@@ -6,7 +6,7 @@
 /* 1. Firefoxの内蔵設定ページや新規タブなどのフォントを変更 */
 @-moz-document url-prefix("about:") {
   * {
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "SF Pro", "Segoe UI", sans-serif !important;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "SF Pro", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "Segoe UI", sans-serif !important;
   }
   
   code, pre, kbd, samp {
@@ -15,14 +15,14 @@
 }
 
 /* 
-  2. すべてのWebページのフォントをAppleフォントに変更
+  2. すべてのWebページのフォントをAppleフォント（SF Pro + ヒラギノ角ゴ）に変更
   （※アイコンフォントが消えるのを防ぐため、一部のアイコン関連クラスを除外しています）
 */
 @-moz-document url-prefix("http://"), url-prefix("https://") {
   body, p, li, a, h1, h2, h3, h4, h5, h6, input, button, select, textarea, 
   span:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]), 
   div:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]) {
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "SF Pro", "Helvetica Neue", Arial, sans-serif !important;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "SF Pro", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "Helvetica Neue", Arial, sans-serif !important;
   }
   
   /* 等幅フォント（ソースコードなど）の指定 */
