@@ -3,9 +3,10 @@
    ブラウザUIのフォントをAppleのSF Pro / SF Mono / ヒラギノ角ゴに統一します。
    ========================================================================== */
 
-/* 1. UI全体のフォントを変更 */
+/* 1. UI全体のフォントを変更と、わずかに太く（W4相当）する設定 */
 * {
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "SF Pro", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "Segoe UI", sans-serif !important;
+  -webkit-text-stroke: 0.15px currentColor !important;
 }
 
 /* 2. アドレスバー（URLバー）のフォント調整 */
@@ -23,6 +24,7 @@ samp,
 .monospace,
 .devtools-monospace {
   font-family: "SF Mono", "SFMono-Regular", Consolas, monospace !important;
+  -webkit-text-stroke: 0px currentColor !important; /* 等幅は元の細さを維持 */
 }
 
 /* 4. タブバーのフォントの太さを少し調整してApple風に */

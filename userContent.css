@@ -7,15 +7,17 @@
 @-moz-document url-prefix("about:") {
   * {
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "SF Pro", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "Segoe UI", sans-serif !important;
+    -webkit-text-stroke: 0.15px currentColor !important;
   }
   
   code, pre, kbd, samp {
     font-family: "SF Mono", "SFMono-Regular", Consolas, monospace !important;
+    -webkit-text-stroke: 0px currentColor !important; /* 等幅は元の細さを維持 */
   }
 }
 
 /* 
-  2. すべてのWebページのフォントをAppleフォント（SF Pro + ヒラギノ角ゴ）に変更
+  2. すべてのWebページのフォントをAppleフォントに変更
   （※アイコンフォントが消えるのを防ぐため、一部のアイコン関連クラスを除外しています）
 */
 @-moz-document url-prefix("http://"), url-prefix("https://") {
@@ -23,10 +25,12 @@
   span:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]), 
   div:not([class*="icon"]):not([class*="fa"]):not([class*="material"]):not([class*="glyphicon"]) {
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "SF Pro", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "Helvetica Neue", Arial, sans-serif !important;
+    -webkit-text-stroke: 0.15px currentColor !important;
   }
   
   /* 等幅フォント（ソースコードなど）の指定 */
   code, pre, kbd, samp, var {
     font-family: "SF Mono", "SFMono-Regular", Consolas, monospace !important;
+    -webkit-text-stroke: 0px currentColor !important; /* ソースコードは元の細さを維持 */
   }
 }
