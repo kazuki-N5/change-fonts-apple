@@ -1,0 +1,8 @@
+{
+  "id": "apple-fonts-mod",
+  "name": "Apple Fonts Mod",
+  "author": "kazuk",
+  "version": "1.0.0",
+  "description": "ブラウザのUIフォントをAppleのシステムフォント（SF Pro / SF Mono）に変更するモッドです。※事前にOSへのフォントインストールが必要です。",
+  "style": "userChrome.css"
+}

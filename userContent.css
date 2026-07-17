@@ -1,0 +1,28 @@
+/* ==========================================================================
+   Apple Fonts Mod - userContent.css
+   WebページやFirefox内蔵ページ（about: ページなど）のフォントを変更します。
+   ========================================================================== */
+
+/* 1. Firefoxの内蔵設定ページや新規タブなどのフォントを変更 */
+@-moz-document url-prefix("about:") {
+  * {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "SF Pro", "Segoe UI", sans-serif !important;
+  }
+  
+  code, pre, kbd, samp {
+    font-family: "SF Mono", "SFMono-Regular", Consolas, monospace !important;
+  }
+}
+
+/* 
+  2. 【オプション】すべてのWebページのデフォルトフォントをAppleフォントに強制したい場合：
+  （※アイコンフォントなどが表示されなくなるリスクを避けるため、デフォルトでは無効化しています。
+     適用したい場合は、以下のコメントアウトを外してください）
+*/
+/*
+@-moz-document url-prefix("http://"), url-prefix("https://") {
+  body, p, span, div, input, button, textarea {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "SF Pro", "Segoe UI", sans-serif !important;
+  }
+}
+*/
